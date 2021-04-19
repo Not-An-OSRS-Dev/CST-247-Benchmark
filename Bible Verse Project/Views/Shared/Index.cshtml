@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h3>@ViewBag.Message</h3>
+    <form asp-controller="Verse" asp-action="Search">
+        <label for="search">Search For Bible Verses</label>
+        <input type="submit" id="search" />
+    </form>
+    <form asp-controller="Verse" asp-action="Create">
+        <label for="search">Create a New Bible Verse</label>
+        <input type="submit" id="search"/>
+    </form>
+</div>
